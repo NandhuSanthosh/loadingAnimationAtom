@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    outline:  1px green;
+}
+
+:root{
+    --cont-width: 300px;
+}
+
+body{
+    padding: 20px;
+}
+span{
+    font-size: 1.4rem;
+}
+.container{
+    width: var(--cont-width);
+    height: var(--cont-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    overflow: hidden;
+}
+.sector{
+    /* background-color: lightgray; */
+
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    position:absolute;
+    border: 3px solid transparent ;
+    inset: 0;
+    margin: auto;
+    animation: whatever var(--duration) linear infinite;
+}
+
+.w-1900{
+    --duration: .9s;
+    --width: calc(100% - 90px);
+    border-right-color: pink;
+}
+.w-1800{
+    --duration: 1.1s;
+    --width: calc(100% - 85px);
+    border-right-color: yellowgreen;
+}
+.w-1700{
+    --duration:  .7s;
+    --width: calc(100% - 80px);
+    border-right-color: cyan;
+}
+.w-1600{
+    --duration: 1.7s;
+    --width: calc(100% - 75px);
+    border-right-color: green;
+}
+.w-1500{
+    --duration: 1.3s;
+    --width: calc(100% - 70px);
+    border-right-color: yellow;
+}
+.w-1400{
+    --duration: .5s;
+    --width: calc(100% - 65px);
+    border-right-color: coral;
+}
+.w-1300{
+    --duration: 1.9s;
+    --width: calc(100% - 60px);
+    border-right-color: lightpink;
+}
+.w-1200{
+    --duration: 1.5s;
+    --width: calc(100% - 55px);
+    border-right-color: lightgreen;
+}
+.w-1100{
+    --duration: 3.7s;
+    --width: calc(100% - 50);
+    border-right-color: red;
+}
+.w-1000{
+    --duration: 2.8s;
+    --width: calc(100% - 45px);
+    border-right-color: pink;
+}
+.w-900{
+    --duration: 2.8s;
+    --width: calc(100% - 40px);
+    border-right-color: pink;
+}
+.w-800{
+    --duration: .9s;
+    --width: calc(100% - 35px);
+    border-right-color: yellowgreen;
+}
+.w-700{
+    --duration: 1s;
+    --width: calc(100% - 30px);
+    border-right-color: cyan;
+}
+.w-600{
+    --duration: 2.5s;
+    --width: calc(100% - 25px);
+    border-right-color: green;
+}
+.w-500{
+    --duration: 2.1s;
+    --width: calc(100% - 20px);
+    border-right-color: yellow;
+}
+.w-400{
+    --duration: 1.2s;
+    --width: calc(100% - 15px);
+    border-right-color: coral;
+}
+.w-300{
+    --duration: 1.7s;
+    --width: calc(100% - 10px);
+    border-right-color: lightpink;
+}
+.w-200{
+    --duration: 2.5s;
+    --width: calc(100% - 5px);
+    border-right-color: lightgreen;
+}
+.w-100{
+    --duration: 3.5s;
+    --width: var(--cont-width);
+    border-right-color: red;
+}
+
+
+@keyframes whatever{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
